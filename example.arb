@@ -1,0 +1,20 @@
+h = {:foo => 0, :bar => 1, baz=> 2}
+key_example = {"a" => 0, "b" => 1, "c" => 2}
+
+user = {:username => "bayu", :password => "123" :gender => "M"}
+
+puts h{:foo}
+
+h.each do |key, value|
+    puts "#{key} is a key and has a value #{value}"
+end
+
+key_example.each do |key, value|
+    puts "#{key} is a key and has a value #{value}"
+end
+puts "input username : "
+username = gets.chomp
+if(username==user[:username])
+    break
+    puts "success login"
+end
